@@ -14,8 +14,10 @@ WORKDIR /myapp
 ENV PATH /myapp/node_modules/.bin:$PATH
 
 # install and cache app dependencies
-COPY package.json /myapp/package.json
-RUN npm install
+COPY . /myapp/
+RUN npm install -g @angular/cli@6
+
+EXPOSE 4200
 
 # start app
 CMD ng serve --host 0.0.0.0
