@@ -16,6 +16,7 @@ ENV PATH /myapp/node_modules/.bin:$PATH
 # install and cache app dependencies
 COPY . /myapp/
 RUN npm install -g @angular/cli@6
+RUN npm install rxjs-compat
 
 EXPOSE 4200
 
