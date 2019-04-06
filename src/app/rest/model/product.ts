@@ -10,9 +10,10 @@
  * Do not edit the class manually.
  */
 
-export interface Product {
+export interface Product { 
     id?: number;
     name?: string;
     description?: string;
     price?: number;
+    image?: string;
 }
