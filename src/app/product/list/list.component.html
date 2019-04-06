@@ -1,3 +1,18 @@
-<p>
-  list works!
-</p>
+<div class="card-container">
+  <div class="card-deck">
+      <div *ngFor="let product of products" class="card">
+          <img class="card-img-top" src="{{ product.image }}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-tile">{{ product.name }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <div class="buy-section">
+                <a href="#" class="btn btn-primary">Add to cart</a>
+                <p>{{ product.price }}€</p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+

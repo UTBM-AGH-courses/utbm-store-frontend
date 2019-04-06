@@ -1,0 +1,28 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0.5em;
+}
+
+.card-deck {
+  align-items: center;
+}
+
+.buy-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.buy-section > p{
+  font-weight: bold;
+  margin: 0%;
+}
+
+.card {
+  width: 18rem;
+}

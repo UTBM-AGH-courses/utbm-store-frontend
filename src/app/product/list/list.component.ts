@@ -15,7 +15,8 @@ export class ListComponent implements OnInit {
   constructor(private productsService: ProductsService) { }
 
   getProducts(): void {
-    this.products = this.productsService.listProducts();
+    this.productsService.listProducts().subscribe(products => {
+                                          this.products = products; });
   }
 
   ngOnInit() {
