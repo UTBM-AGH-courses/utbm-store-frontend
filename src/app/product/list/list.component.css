@@ -4,11 +4,14 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 0.5em;
+  margin-top: 4.5em;
+  margin-bottom: 2.7em;
 }
 
 .card-deck {
-  align-items: center;
+  align-items: baseline;
 }
+
 
 .buy-section {
   display: flex;
