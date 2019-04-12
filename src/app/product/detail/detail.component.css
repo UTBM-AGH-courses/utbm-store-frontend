@@ -1,0 +1,5 @@
+.card-containter {
+  display: flex;
+  justify-content: center;
+  margin: 14vh 10vw;
+}
