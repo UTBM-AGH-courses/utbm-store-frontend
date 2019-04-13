@@ -1,5 +1,8 @@
 <div class="card-container">
-  <ng-masonry-grid [masonryOptions]="{ transitionDuration: '0s', gutter: 20 }">
+  <ng-masonry-grid [masonryOptions]="{ transitionDuration: '0.5s', gutter: 15 }"
+                  [useAnimation]="true"
+                  [useImagesLoaded]="true"
+                  [scrollAnimationOptions]="{ animationEffect: 'effect-2', minDuration : 0.4, maxDuration : 0.7 }">
       <ng-masonry-grid-item id="{{'masonry-item-'+i}}" *ngFor="let product of products; let i = index;">
           <div class="card">
             <img class="card-img-top" src="{{ product.image }}" alt="Card image cap">
