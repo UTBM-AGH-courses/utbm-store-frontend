@@ -9,6 +9,7 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  *//* tslint:disable:no-unused-variable member-ordering */
+  // tslint:disable: import-spacing
 
 import { Inject, Injectable, Optional }                      from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams,
@@ -26,11 +27,13 @@ import { Configuration }                                     from '../configurat
 @Injectable()
 export class ProductsService {
 
-    protected basePath = 'https://virtserver.swaggerhub.com/vareversat/Store/1.0.0';
+    protected basePath = 'http://heroku.kebab-hurlant.fr';
     public defaultHeaders = new HttpHeaders();
     public configuration = new Configuration();
 
-    constructor(protected httpClient: HttpClient, @Optional()@Inject(BASE_PATH) basePath: string, @Optional() configuration: Configuration) {
+    constructor(protected httpClient: HttpClient,
+      @Optional()@Inject(BASE_PATH) basePath: string,
+      @Optional() configuration: Configuration) {
         if (basePath) {
             this.basePath = basePath;
         }
@@ -74,11 +77,11 @@ export class ProductsService {
         let headers = this.defaultHeaders;
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
-        if (httpHeaderAcceptSelected != undefined) {
+        if (httpHeaderAcceptSelected !== undefined) {
             headers = headers.set('Accept', httpHeaderAcceptSelected);
         }
 
@@ -98,7 +101,7 @@ export class ProductsService {
 
     /**
      * get a list of products
-     * 
+     *
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
@@ -110,7 +113,7 @@ export class ProductsService {
         let headers = this.defaultHeaders;
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
