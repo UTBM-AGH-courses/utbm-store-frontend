@@ -1,4 +1,10 @@
  .card-detail {
-  padding: 12vh 15vw;
+  display: flex;
+  justify-content: center;
+  margin: 12vh 10vw;
+}
+
+.card-detail > .card {
+  width: 30rem;
 }
 
