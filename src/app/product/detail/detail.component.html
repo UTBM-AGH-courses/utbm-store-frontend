@@ -1,16 +1,16 @@
-<div class="card-containter">
+<div class="card-detail">
   <div class="card">
     <img class="card-img-top" src="{{ product.image }}" alt="Card image cap">
     <div class="card-body">
         <div class="title-section">
             <h5 class="card-tile">{{ product.name }}</h5>
+            <p>{{ product.price }}€</p>
         </div>
         <p class="card-text">{{ product.description }}</p>
         <div class="buy-section">
             <a href="#" class="btn btn-dark btn-lg">
                 <i class="icon ion-md-cart"></i>
             </a>
-            <p>{{ product.price }}€</p>
         </div>
     </div>
   </div>
