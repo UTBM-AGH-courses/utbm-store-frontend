@@ -27,7 +27,7 @@ import { Configuration }                                     from '../configurat
 @Injectable()
 export class ProductsService {
 
-    protected basePath = 'http://heroku.kebab-hurlant.fr';
+    protected basePath = 'https://heroku.kebab-hurlant.fr';
     public defaultHeaders = new HttpHeaders();
     public configuration = new Configuration();
 
