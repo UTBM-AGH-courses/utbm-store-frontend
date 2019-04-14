@@ -1,0 +1,9 @@
+.cart-container {
+  justify-content: center;
+  margin: 12vh 10vw;
+}
+
+.cart-container > a {
+  margin-top: 3em;
+  float: right;
+}

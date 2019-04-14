@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductModule } from './product/product.module';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { CartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     ApiModule,
     HttpClientModule,
-    ProductModule
+    ProductModule,
+    CartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
