@@ -3,16 +3,15 @@ import { CommonModule } from '@angular/common';
 import { ListComponent } from './list/list.component';
 import { RouterModule, Routes } from '@angular/router';
 
-const appRoutes: Routes = [
+const routes: Routes = [
   { path: '', component: ListComponent }
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(appRoutes)
+    RouterModule.forChild(routes)
   ],
-  declarations: [ListComponent],
-  exports: [ListComponent, RouterModule]
+  declarations: [ListComponent]
 })
 export class CartModule { }
