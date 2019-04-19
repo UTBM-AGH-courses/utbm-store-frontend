@@ -12,6 +12,7 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ListComponent]
+  declarations: [ListComponent],
+  exports: [ RouterModule ]
 })
 export class CartModule { }

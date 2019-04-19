@@ -16,6 +16,7 @@ const routes: Routes = [
     NgMasonryGridModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ListComponent, DetailComponent]
+  declarations: [ListComponent, DetailComponent],
+  exports: [ RouterModule ]
 })
 export class ProductModule { }
