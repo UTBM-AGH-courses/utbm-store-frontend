@@ -5,22 +5,18 @@ import { NgMasonryGridModule } from 'ng-masonry-grid';
 import { RouterModule, Routes } from '@angular/router';
 import { DetailComponent } from './detail/detail.component';
 
-const appRoutes: Routes = [
-  { path: 'products', component: ListComponent },
+const routes: Routes = [
   { path: '', component: ListComponent },
-  { path: 'products/:id', component: DetailComponent },
+  { path: ':id', component: DetailComponent },
 ];
 
 @NgModule({
   imports: [
     CommonModule,
     NgMasonryGridModule,
-    RouterModule.forRoot(
-      appRoutes,
-      {enableTracing: true}
-    )
+    RouterModule.forChild(routes)
   ],
   declarations: [ListComponent, DetailComponent],
-  exports: [ListComponent, DetailComponent, RouterModule]
+  exports: [ RouterModule ]
 })
 export class ProductModule { }

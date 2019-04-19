@@ -4,16 +4,13 @@ import { ListComponent } from './list/list.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  { path: 'cart', component: ListComponent }
+  { path: '', component: ListComponent }
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(
-      appRoutes,
-      {enableTracing: true}
-    )
+    RouterModule.forChild(appRoutes)
   ],
   declarations: [ListComponent],
   exports: [ListComponent, RouterModule]
