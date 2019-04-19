@@ -6,7 +6,6 @@ import { ApiModule } from './rest';
 import { HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
-import { CartModule } from './cart/cart.module';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     ApiModule,
     HttpClientModule,
-    CartModule,
     AppRoutingModule
   ],
   providers: [],
